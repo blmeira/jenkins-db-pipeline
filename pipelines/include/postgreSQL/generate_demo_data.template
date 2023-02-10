@@ -1,0 +1,24 @@
+CREATE TABLE department
+(
+    DEPT      char(4)      not null,
+    DEPT_NAME varchar(250) not null,
+    CONSTRAINT dep_contraint
+        CHECK (DEPT ~* '^[0-9]{4}$')
+);
+
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('0001', 'Maths');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('0010', 'Biology');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('0100', 'Computer Science');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('1000', 'Literature');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('0001', 'Geology');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('3000', 'Psychology');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('2001', 'Economics');
+INSERT INTO department (DEPT, DEPT_NAME)
+VALUES ('0601', 'Physics');

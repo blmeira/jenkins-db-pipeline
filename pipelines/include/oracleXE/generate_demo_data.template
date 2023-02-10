@@ -1,0 +1,24 @@
+CREATE TABLE DEVAPP.department
+(
+    DEPT      char(4)      not null,
+    DEPT_NAME varchar(250) not null,
+    CONSTRAINT dep_contraint
+        REGEXP_LIKE(DEPT, '^[0-9]{4}$')
+);
+
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('0001', 'Maths');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('0010', 'Biology');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('0100', 'Computer Science');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('1000', 'Literature');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('0001', 'Geology');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('3000', 'Psychology');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('2001', 'Economics');
+INSERT INTO DEVAPP.department (DEPT, DEPT_NAME)
+VALUES ('0601', 'Physics');
